@@ -1,0 +1,39 @@
+*, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: black;
+}
+
+footer {
+    background-color: black;
+}
+header, footer {
+    text-align: center;
+    background-color: black;
+}
+h2 {
+    color: rgb(255, 255, 255);
+}
+/* section{
+    text-align: center;
+} */
+
+.box_block {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .box_block li {
+    list-style: none;
+    display: inline;
+  }
+
+div {
+    display: inline;
+    text-align: center;
+}
