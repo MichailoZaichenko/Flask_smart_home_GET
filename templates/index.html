@@ -7,10 +7,10 @@
             <h1>Temperature</h1>
             <ul class="box_block">
                 <li>
-                    <h3>current {{ temperature }}°C</h3>
+                    <h3>current {{ args["temperature"] }}°C</h3>
                 </li>
                 <li>
-                    <h3>average</h3>
+                    <h3>average {{ args["temperature"] }}°C</h3>
                 </li>
             </ul>
         </div>
@@ -19,7 +19,7 @@
             <ul class="box_block">
                 <h1>Humidity</h1>
                 <li>
-                    <h3>current {{ humidity }}%</h3>
+                    <h3>current {{ args["humidity"] }}%</h3>
                 </li>
             </ul>
         </div>
@@ -28,13 +28,13 @@
             <h1>Counter</h1>
             <ul class="box_block">
                 <li>
-                    <h3>electricity {{ electricity }}Кв</h3>
+                    <h3>electricity {{ args["electricity"] }}Кв</h3>
                 </li>
                 <li>
-                    <h3>gas {{ gas }}м3</h3>
+                    <h3>gas {{ args["gas"] }}м3</h3>
                 </li>
                 <li>
-                    <h3>water {{ water }}л.</h3>
+                    <h3>water {{ args["water"] }}л.</h3>
                 </li>
             </ul>
         </div>
@@ -43,13 +43,13 @@
             <h1>Boiler</h1>
             <ul class="box_block">
                 <li>
-                    <h3>Isturn_on {{ IsRan }}</h3>
+                    <h3>Isturn_on {{ args["IsRan"] }}</h3>
                 </li>
                 <li>
-                    <h3>temperature {{ boiler_temp }}°C</h3>
+                    <h3>temperature {{ args["boiler_tempure"] }}°C</h3>
                 </li>
                 <li>
-                    <h3>pressure {{ boiler_pres }}Па</h3>
+                    <h3>pressure {{ args["boiler_presure"] }}Па</h3>
                 </li>
             </ul>
         </div>
