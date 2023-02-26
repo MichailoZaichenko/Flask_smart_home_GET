@@ -10,7 +10,17 @@ app = Flask(__name__)
 def home(): 
     with open("example.json", "r") as file:
         data = json.load(file)
-    return render_template("index.html", head1="head", title = "Smart home", temperature = data['temperature'], humidity = data["humidity"], electricity = data["meter"]["electricity"]["consumption"], gas = data["meter"]["gas"]["consumption"], water = data["meter"]["water"]["consumption"], boiler_tempure = data['boiler']["temperature"], boiler_presure = data['boiler']["pressure"], IsRan = data['boiler']['isRun'])
+        data = {
+    "temperature" : 25.2,
+    "humidity" : 73.6,
+    "electricity" : 1.2,
+    "gas" : 0.5,
+    "water" : 0.1,
+    "IsRan" : True,
+    "boiler_tempure" : 28.2,
+    "boiler_presure" : 1.6
+    }
+    return render_template("index.html", head1="head", title = "Smart home", args = data)
 
 @app.route('/api')
 def any_funk(): 
